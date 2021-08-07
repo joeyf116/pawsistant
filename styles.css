@@ -215,7 +215,7 @@ body {
      justify-content: flex-start;
      align-items: center;
      width: 100%;
-     height: 816px;
+     height: auto;
      background-image: url('./images/mobile-backgrounds/4.png');
      background-size: cover;
      background-repeat: no-repeat;
