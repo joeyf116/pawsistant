@@ -271,6 +271,14 @@ body {
     background-color: var(--main-popping-color);
     color: var(--main-v-light-color);
     text-decoration: none;
+    position: relative;
+    transition: all .1s;
+    overflow: hidden;
+  }
+
+  .home-content-text a:hover {
+    text-decoration: underline;
+    font-weight: 600;
   }
 
   .home-content img {
