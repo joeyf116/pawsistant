@@ -1,14 +1,130 @@
 :root {
-    --main-text-color: white;
+    --main-light-color: #FFFAF9;
+    --main-verydark-color: #47261B;
+    --main-popping-color: #FF9058;
+    --main-dark-color: #03265B;
+    --main-mid-color: #44D7CA;
 }
 
 html {
     padding: 8px 8px;
+    font-family: "Libre Baskerville";
 }
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     height: 100%;
+    font-family: "Spartan";
 }
+
+#nav-button {
+    position: fixed;
+    position: -webkit-sticky;
+    /* position: sticky; */
+    right: 1em;
+    top: 1em;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--main-dark-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+    padding-top: 150px;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .overlay-main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: right;
+  }
+
+  .overlay-socials-content {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .overlay-socials-content img {
+    height: 1em;
+    width: 1em;
+}
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--main-light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: right;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #nav-button {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 3em;
+    color: var(--main-dark-color);
+    cursor:pointer;
+  }
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 60px;
+  }
+  
+  #quote-button {
+    /* width: 30%; */
+    border: 2px solid var(--main-popping-color);
+    background-color: var(--main-popping-color);
+    color: var(--main-light-color);
+    padding: 12px 12px;
+    font-size: 90%;
+    /* transform: translateX(50%); */
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    opacity: .8;
+  }
+
+  #quote-button:hover {
+      opacity: 1;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }

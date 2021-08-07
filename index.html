@@ -2,31 +2,60 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-	<link rel="stylesheet" href="./styles.css">
-	<!-- CSS only -->
-	<title>Pawsistant</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images/client/PawsistanrLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Spartan:wght@100;400;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- CSS only -->
+    <title>Pawsistant</title>
 </head>
+
 <body>
+    <!-- Nav -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="overlay-main-content">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Testimonials</a>
+                <a href="#">Work With Me</a>
+            </div>
+            <div class="overlay-socials-content">
+                <a href="#" id="insta"><img src="./images/socialmedia/instagram-icon.svg"></a>
+                <a href="#" id="fb"><img src="./images/socialmedia/facebook-icon.svg"></a>
+            </div>
+            <div class="overlay-quote-button">
+                <a href="#" id="quote-button">Request a Quote</a>
+            </div>
+        </div>
+    </div>
+    <span id="nav-button" class="openbtn" onclick="openNav()">&plus;</span>
+    <!-- Nav Ending -->
     <!-- Home Container -->
     <div class="home--container">
         <div class="home-nav">
-
         </div>
         <div class="home-content">
-            <h2>Welcome to business!</h2>
+            <!-- <h2><pre>Welcome to</pre><pre><span>Pawsistant!</span></pre></h2> -->
         </div>
     </div>
     <!-- Home Container Ending -->
 </body>
 <script src="./scripts.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
 </script>
+
 </html>
