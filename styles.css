@@ -239,7 +239,7 @@ body {
      position: absolute;
      content: "";
      height: 130%;
-     width: 130%;
+     width: 100%;
      background-image: url('./images/misc/pawprint.svg');
      background-size: contain;
      background-repeat: no-repeat;
