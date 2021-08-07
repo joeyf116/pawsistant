@@ -1,13 +1,13 @@
 :root {
-    --main-light-color: #FFFAF9;
-    --main-verydark-color: #47261B;
-    --main-popping-color: #FF9058;
+    --main-v-light-color: #FFFBF5;
+    --main-light-color: #75C3E2;
+    --main-popping-color: #E29475;
     --main-dark-color: #03265B;
-    --main-mid-color: #44D7CA;
+    --main-mid-color: #005B9B;
 }
 
 html {
-    padding: 8px 8px;
+    /* padding: 8px 8px; */
     font-family: "Libre Baskerville";
 }
 
@@ -18,19 +18,19 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Spartan";
-    background-color: var(--main-light-color);
+    background-color: var(--main-v-light-color);
 }
 
 /* Mobile Navigation
    ============================= */
 
-#nav-button {
+/* #nav-button {
     position: fixed;
     position: -webkit-sticky;
-    /* position: sticky; */
+    position: sticky;
     right: 1em;
     top: 1em;
-}
+} */
 
 .overlay {
     height: 100%;
@@ -80,7 +80,7 @@ body {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: var(--main-light-color);
+    color: var(--main-v-light-color);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -93,10 +93,16 @@ body {
     font-weight: bold;
   }
 
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   #nav-button {
-    position: absolute;
-    top: 0;
-    right: 25px;
+    text-align: right;
     font-size: 3em;
     color: var(--main-dark-color);
     cursor:pointer;
@@ -116,7 +122,7 @@ body {
     width: 100%;
     border: 2px solid var(--main-popping-color);
     background-color: var(--main-popping-color);
-    color: var(--main-light-color);
+    color: var(--main-v-light-color);
     padding: 12px 12px;
     font-size: 90%;
     text-align: center;
@@ -163,7 +169,7 @@ body {
        border: 1px solid var(--main-dark-color);
        padding: 12px 12px;
        background-color: var(--main-dark-color);
-       color: var(--main-light-color);
+       color: var(--main-v-light-color);
        /* font-size: .7em; */
    }
 
@@ -203,23 +209,61 @@ body {
    .home--container {
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     justify-content: flex-start;
      align-items: center;
      width: 100%;
+     height: 816px;
+     background-image: url('./images/mobile-backgrounds/4.png');
+     background-repeat: no-repeat;
+     background-size: cover;
    }
 
    .home-content {
      display: flex;
-     flex-direction: row;
-     justify-content: center;
-     /* align-items: center; */
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
      text-align: center;
      font-family: 'Libre Baskerville';
-     z-index: -1;
-     width: 100%;
+     width: 80%;
    }
 
-   .home-content-text {
-     transform: translateY(5%);
-     width: 50%;
+   .home-content h1 {
+     position: relative;
+     font-size: 4em;
+     overflow: hidden;
+     transition: all .5s;
    }
+
+   .home-content h1:before {
+     position: absolute;
+     content: "";
+     height: 100%;
+     width: 30%;
+     top: 0;
+     left: 0;
+     border-radius: 50%;
+     transform: perspective(1000px) rotateX(10deg);
+     background-color: var(--main-popping-color);
+     z-index: -1;
+  }
+
+   .home-content-text {
+     margin-top: 30px;
+     padding: 10% 0%;
+     width: 100%;
+     font-size: 1.5em;
+   }
+
+   .home-content-text span{
+     color: var(--main-light-color);
+     font-weight: bold;
+  }
+
+  .home-content-text a {
+    border: 2px solid var(--main-popping-color);
+    padding: 12px 12px;
+    background-color: var(--main-popping-color);
+    color: var(--main-v-light-color);
+    text-decoration: none;
+  }
