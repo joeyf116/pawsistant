@@ -218,9 +218,7 @@ body {
      align-items: center;
      width: 100%;
      height: auto;
-     background-image: url('./images/mobile-backgrounds/4.png');
-     background-size: cover;
-     background-repeat: no-repeat;
+     background: linear-gradient(10deg, var(--main-light-color), var(--main-v-light-color) 80.71%);
    }
 
    .home-content {
@@ -238,6 +236,7 @@ body {
      font-size: 4em;
      /* overflow: hidden; */
      transition: all .5s;
+     z-index: 1;
    }
 
    .home-content h1:before {
@@ -294,11 +293,11 @@ body {
 
     /* Home Page Media Queries
    ============================= */
-
+/* 
   @media screen and (min-width: 768px) {
     .home--container {
       background-image: url('./images/ultrawide-backgrounds/4.png');
       background-size: fill;
       background-repeat: round;
     }
-  }
+  } */
