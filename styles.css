@@ -463,4 +463,21 @@ body {
      /* visibility: hidden; */
    }
 
+   #connect-button {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     background-color: var(--main-popping-color);
+     border: 2px solid var(--main-popping-color);
+     padding: 12px 12px;
+     text-decoration: none;
+     color: var(--main-v-light-color);
+     letter-spacing: 2px;
+     margin: 5px
+   }
   
+   #connect-button:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+  }
