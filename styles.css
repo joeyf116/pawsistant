@@ -420,6 +420,7 @@ body {
     color: var(--main-v-light-color);
     padding: 2px 8px;
     margin: 10px;
+    overflow: hidden;
    }
 
    .services-content-box h1{
