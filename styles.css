@@ -55,8 +55,6 @@ body {
     text-align: right;
     padding-top: 150px;
     width: 100%;
-    /* margin-top: 30px; */
-    height: 100%;
   }
 
   .overlay-main-content {
@@ -119,8 +117,12 @@ body {
   
   .overlay-quote-button {
       margin: 10px 10px;
-      align-self: flex-end;
+      /* align-self: flex-end; */
+      position: absolute;
+      bottom: 0;
+      right: 25px;
   }
+
   #quote-button {
     width: 100%;
     border: 2px solid var(--main-popping-color);
