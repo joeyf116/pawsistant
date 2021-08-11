@@ -8,6 +8,11 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+// Scroll animation
+function scroll(e) {
+    console.log(e);
+} 
+
 function seeMore() {
   if(document.getElementById("services-list-see-more-tag").innerHTML === "See more!") {
     document.getElementById("services-list").style.display = "flex";
