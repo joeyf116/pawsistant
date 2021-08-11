@@ -31,6 +31,10 @@ function seeMore() {
   else {
     document.getElementById("services-list").style.display = "none";
     document.getElementById("services-list-see-more-tag").innerHTML = "See more!"
+    var anchor = document.querySelector('#instagram-services');
+    anchor.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }
 
@@ -52,5 +56,9 @@ function seeMore2() {
   else {
     document.getElementById("services-list2").style.display = "none";
     document.getElementById("services-list-see-more-tag2").innerHTML = "See more!"
+    var anchor = document.querySelector('#instagram-services');
+    anchor.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }
