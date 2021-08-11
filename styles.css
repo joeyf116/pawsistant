@@ -545,7 +545,8 @@ body {
     /* justify-content: center; */
     align-items: center;
     /* background-image: url('./images/mobile-backgrounds/2.png'); */
-    color: var(--main-dark-color)
+    color: var(--main-dark-color);
+    background-image: url('./images/mobile-backgrounds/1.png');
   }
 
   .portfolio-container h1 {
@@ -578,12 +579,13 @@ body {
   }
 
 .portfolio-container h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   align-self: center;
   padding: 0px 10px;
   font-weight: 700;
   border: 2px solid var(--main-v-light-color);
-  background-color: var(--main-v-light-color);
+  background: var(--main-v-light-color);
+  /* background-image: url('./images/mobile-backgrounds/1.png'); */
   position: relative;
   z-index: 1;
   overflow: hidden;
