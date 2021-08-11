@@ -557,6 +557,7 @@ body {
     height: 18em;
     width: auto;
     transform: translateX(2%) translateY(-1%);
+    border-bottom-left-radius: 12px;
   }
 
   .portfolio-content-box ul li {
@@ -635,7 +636,8 @@ body {
 .portfolio-content-template-box ul li img {
   height: 18em;
   width: auto;
-  transform: translateX(2%) translateY(-1%)
+  transform: translateX(2%) translateY(-1%);
+  border-bottom-left-radius: 12px;
 }
 
 .portfolio-content-template-box ul li {
