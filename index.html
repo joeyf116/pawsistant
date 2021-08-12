@@ -62,13 +62,16 @@
         <div class="home-content">
             <h1>Pawsistant</h1>
             <a href="#">Book with me!</a>
+			<section id="scrollBouncer" class="scroll-bouncer">
+				<a href="#about"><span></span></a>
+			  </section>
         </div>
     </div>
     <!-- Home Container Ending -->
     <!-- About Container -->
     <div class="about--container">
 		<a name="about"></a>
-        <div class="about-content">
+        <div class="about-content scroll-element js-scroll fade-in-bottom">
             <h1 id="about-title">About Me</h1>
             <div class="about-content-text">
                 <img src="images/client/PawsistantHeadshot.jpg" alt="Photo of Tiffany">
@@ -80,7 +83,7 @@
     <!-- Services Container -->
     <div class="services--container">
 		<a name="services"></a>
-        <div class="services-content">
+        <div class="services-content scroll-element js-scroll fade-in-bottom">
             <h1 id="services-title">Services</h1>
             <a id="instagram-services"></a>
             <div class="services-content-box">
@@ -126,9 +129,9 @@
     </div>
     <!-- Services Container Ending -->
     <!-- Portfolio Container -->
-	<div class="portfolio-container">
+	<div class="portfolio-container scroll-element js-scroll fade-in-bottom">
 		<a name="portfolio"></a>
-		<h1 id="portfolio-title">Portfolio</h1>
+		<h1 id="portfolio-title ">Portfolio</h1>
 		<h2>Instagram</h2>
             <div class="portfolio-content-box">
                 <ul>
@@ -140,9 +143,6 @@
 					</li>
 					<li>
 						<img src="./images/portfolio/3.png" alt="3">
-					</li>
-					<li>
-						<img src="images/portfolio/1.png" alt="4">
 					</li>
 				</ul>
             </div>
@@ -163,7 +163,7 @@
 	</div>
     <!-- Portfolio Container Ending -->
     <!-- Work with Me -->
-    <div class="work-container">
+    <div class="work-container scroll-element js-scroll fade-in-bottom">
         <a name="work"></a>
 		<h1 id="work-title">Work With Me</h1>
         <div class="work-content-box">
@@ -192,7 +192,8 @@
 	</div> -->
     <!-- Footer ending -->
 </body>
-<script src="./scripts.js"></script>
+<script src="./scripts/scripts.js"></script>
+<script src="./scripts/scrollAnimation.js"></script>
 </script>
 
 </html>
