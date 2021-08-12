@@ -617,7 +617,7 @@ body {
   z-index: -1;
 }
 
-.testimonials-content-box p:before {
+/* .testimonials-content-box p:before {
   content: "\201C";
   position: absolute;
   top: 65%;
@@ -638,7 +638,7 @@ body {
   z-index: -1;
   opacity: .3;
   transform: rotate(-340deg)
-}
+} */
 .testimonials-content-box h6 {
   font-size: 1em;
   text-align: right;
