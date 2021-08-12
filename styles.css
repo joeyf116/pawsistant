@@ -542,18 +542,27 @@ body {
   .portfolio-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    /* background-image: url('./images/mobile-backgrounds/2.png'); */
+    width: 100%;
+    height: 100%;
     color: var(--main-dark-color);
     background-image: url('./images/mobile-backgrounds/1.png');
+  }
+
+  .portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
   }
 
   .portfolio-container h1 {
     text-align: center;
     color: var(--main-dark-color);
     letter-spacing: 2px;
-    font-size: 3em;
+    font-size: 3.5em;
     position: relative;
     z-index: 5;
     overflow: hidden;
@@ -578,7 +587,8 @@ body {
     z-index: -1;
   }
 
-.portfolio-container h2 {
+
+.portfolio-content h2 {
   font-size: 2em;
   align-self: center;
   padding: 0px 10px;
@@ -730,7 +740,7 @@ body {
   }
   
   .scrolled.fade-in {
-    animation: fade-in .5s ease-in-out both;
+    animation: fade-in 1s ease-in-out both;
   }
   
   .scrolled.fade-in-bottom {
