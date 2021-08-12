@@ -612,8 +612,33 @@ body {
   border-bottom: 2px solid var(--main-dark-color);
   border-top: 2px solid var(--main-dark-color);
   padding: 10px 0px;
+  position: relative;
+  font-size: 1.3em;
+  z-index: -1;
 }
 
+.testimonials-content-box p:before {
+  content: "\201C";
+  position: absolute;
+  top: 65%;
+  left: -40%;
+  color: var(--main-popping-color);
+  font-size: 30em;
+  z-index: -1;
+  opacity: .3;
+  transform: rotate(20deg)
+}
+.testimonials-content-box p:after {
+  content: "\201D";
+  position: absolute;
+  bottom: -70%;
+  right: 10%;
+  color: var(--main-popping-color);
+  font-size: 30em;
+  z-index: -1;
+  opacity: .3;
+  transform: rotate(-340deg)
+}
 .testimonials-content-box h6 {
   font-size: 1em;
   text-align: right;
