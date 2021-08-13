@@ -580,7 +580,6 @@ body {
     text-align: center;
     color: var(--main-dark-color);
     letter-spacing: 2px;
-    font-size: 3em;
     position: relative;
     z-index: 5;
     overflow: hidden;
@@ -589,7 +588,7 @@ body {
   #process-title {
     font-style: italic;
     letter-spacing: 0px;
-    font-size: 3.5em;
+    font-size: 3em;
   }
   
   .process-content #process-title:before {
