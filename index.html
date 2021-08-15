@@ -147,18 +147,33 @@
             <h1 id="process-title" class="scroll-element js-scroll fade-in-bottom">How it Works</h1>
             <div class="process-content-box">
                 <h3><span>01.</span> Get To Know You Meeting</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem, deserunt asperiores commodi excepturi at ut?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem,
+                    deserunt asperiores commodi excepturi at ut?</p>
             </div>
             <div class="process-content-box">
                 <h3><span>02.</span> Welcome to Pawsistant family!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem, deserunt asperiores commodi excepturi at ut?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem,
+                    deserunt asperiores commodi excepturi at ut?</p>
             </div>
             <div class="process-content-box">
                 <h3><span>03.</span> On our way to grow your biz</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem, deserunt asperiores commodi excepturi at ut?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam debitis nostrum quidem,
+                    deserunt asperiores commodi excepturi at ut?</p>
             </div>
         </div>
     </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+    
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+    
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
     <!-- Process Container Ending -->
     <!-- Portfolio Container -->
     <div class="portfolio-container">
@@ -169,13 +184,13 @@
             <div class="portfolio-content-box">
                 <ul>
                     <li class="scroll-element js-scroll slide-right">
-                        <img src="./images/portfolio/4.png" alt="1">
+                        <img id="myImg1" onClick="displayModal(4)" src="./images/portfolio/4.png" alt="1">
                     </li>
                     <li class="scroll-element js-scroll slide-right">
-                        <img src="./images/portfolio/2.png">
+                        <img id="myImg1" onClick="displayModal(2)" src="./images/portfolio/2.png">
                     </li>
                     <li class="scroll-element js-scroll slide-right">
-                        <img src="./images/portfolio/3.png" alt="3">
+                        <img id="myImg1" onClick="displayModal(3)" src="./images/portfolio/3.png" alt="3">
                     </li>
                 </ul>
             </div>
@@ -183,13 +198,13 @@
             <div class="portfolio-content-box">
                 <ul>
                     <li id="start-scroll" class="scroll-element js-scroll slide-left">
-                        <img src="./images/portfolio/IG Templates.png" alt="1">
+                        <img id="myImg1" onClick="displayModal('IG Templates')" src="./images/portfolio/IG Templates.png" alt="1">
                     </li>
                     <li class="scroll-element js-scroll slide-left">
-                        <img src="./images/portfolio/Templates.png">
+                        <img id="myImg1" onClick="displayModal('Templates')" src="./images/portfolio/Templates.png">
                     </li>
                     <li class="scroll-element js-scroll slide-left">
-                        <img src="./images/portfolio/EBooks.png" alt="3">
+                        <img id="myImg1" onClick="displayModal('EBooks')" src="./images/portfolio/EBooks.png" alt="3">
                     </li>
                 </ul>
             </div>

@@ -62,3 +62,21 @@ function seeMore2() {
     });
   }
 }
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+function displayModal(photoNum) {
+  console.log(photoNum);
+  var modalImg = document.getElementById(`img01`);
+  var captionText = document.getElementById(`caption${photoNum}`);
+  modal.style.display = "block";
+  modalImg.src = `./images/portfolio/${photoNum}.png`;
+  // captionText.innerHTML = this.alt;
+}
+
+// When the user clicks on <span> (x), close the modal
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}

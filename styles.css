@@ -118,10 +118,10 @@ body {
   opacity: .7;
 }
 
-.mobile-nav a img{
- height: 3em;
- width: auto;
- border-radius: 50%;
+.mobile-nav a img {
+  height: 3em;
+  width: auto;
+  border-radius: 50%;
 }
 
 #nav-button {
@@ -553,67 +553,67 @@ body {
 /* Process Page Styling
    ============================= */
 
-   .process-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid var(--main-dark-color);
-    border-bottom: 2px solid var(--main-dark-color);
-   }
+.process-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid var(--main-dark-color);
+  border-bottom: 2px solid var(--main-dark-color);
+}
 
-   .process-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 30px 0px;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+.process-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
-  .process-content h1 {
-    text-align: center;
-    color: var(--main-dark-color);
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 5;
-    overflow: hidden;
-  }
-  
-  #process-title {
-    font-style: italic;
-    letter-spacing: 0px;
-    font-size: 3em;
-  }
-  
-  .process-content #process-title:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--main-popping-color);
-    background-color: var(--main-popping-color);
-    transform: perspective(500px) rotateX(70deg);
-    z-index: -1;
-  }
+.process-content h1 {
+  text-align: center;
+  color: var(--main-dark-color);
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+}
 
-  .process-content-box {
-    width: 85%;
-    padding: 12px 12px;
-    background: var(--main-v-light-color);
-  }
+#process-title {
+  font-style: italic;
+  letter-spacing: 0px;
+  font-size: 3em;
+}
 
-  .process-content-box img{
-    height: 7em;
-    width: auto;
-  }
+.process-content #process-title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--main-popping-color);
+  background-color: var(--main-popping-color);
+  transform: perspective(500px) rotateX(70deg);
+  z-index: -1;
+}
+
+.process-content-box {
+  width: 85%;
+  padding: 12px 12px;
+  background: var(--main-v-light-color);
+}
+
+.process-content-box img {
+  height: 7em;
+  width: auto;
+}
 
 /* Testimonials Page Styling
    ============================= */
@@ -835,6 +835,97 @@ body {
   border-radius: 12px;
 }
 
+.portfolio-content-box img:hover {
+  opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+  z-index: 99999;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 /* Work With Me Page Styling
    ============================= */
 
@@ -887,39 +978,40 @@ body {
 
 /* Instagram Live Feed Page Styling
    ============================= */
-   .instagram--container {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     height: 100%;
-     background: var(--main-popping-color);
-   }
+.instagram--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--main-popping-color);
+}
 
-   .instagram-content {
-     display: flex;
-     flex-direction: row;
-     width: 85%;
-     justify-content: space-evenly;
-     align-items: center;
-     padding-bottom: 30px;
-     /* background-color: var(--main-popping-color);
+.instagram-content {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 30px;
+  /* background-color: var(--main-popping-color);
      background: linear-gradient(var(--main-v-light-color), var(--main-popping-color)); */
-     flex-wrap: wrap;
-   }
+  flex-wrap: wrap;
+}
 
-   .instagram--container h3{
-    font-size: 2em;
-    text-align: center;
-    position: relative;
-  }
-  .instagram-content-box img{
-     margin: 0px 0px;
-     width: 10em;
-     height: 9em;
-     opacity: 1;
-  }
+.instagram--container h3 {
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+}
+
+.instagram-content-box img {
+  margin: 0px 0px;
+  width: 10em;
+  height: 9em;
+  opacity: 1;
+}
 
 /* Footer Page Styling
    ============================= */
