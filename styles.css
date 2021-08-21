@@ -169,23 +169,39 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 50px 10px;
+  padding: 30px 20px;
   align-items: center;
+  background: var(--main-v-light-color);
+  padding-right: 50px;
 }
 
 .desktop-nav img {
-  height: 1.3em;
-  width: 1.3em;
+  height: 1.2em;
+  width: 1.2em;
+  transform: translateY(20%)
 }
 
 .desktop-nav a {
   text-decoration: none;
   color: var(--main-dark-color);
   flex-wrap: nowrap;
-  letter-spacing: 2px;
+  letter-spacing: .7px;
   padding: 0 15px;
   font-weight: 500;
   /* transition: all .1s; */
+}
+
+#desktop-logo img{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+
+#desktop-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(15%)
 }
 
 .desktop-nav a:hover {
@@ -218,6 +234,12 @@ body {
 
 @media screen and (min-width: 800px) {
   .openbtn {
+    display: none;
+  }
+  .desktop-nav {
+    justify-content: flex-end;
+  }
+  .mobile-nav {
     display: none;
   }
 }
