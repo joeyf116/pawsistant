@@ -513,13 +513,18 @@ body {
   text-align: center;
 }
 
+.services-content-boxes {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+}
+
 .services-content-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 100%;
   border: 1px solid var(--main-v-light-color);
   background-color: var(--main-v-light-color);
   border-radius: 12px;
@@ -589,6 +594,31 @@ body {
   text-decoration: underline;
   font-weight: bolder;
 }
+/* Services Media Queries
+   ============================= */
+   @media screen and (min-width: 800px) {
+    /* .services--container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    } */
+    .services-content-boxes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .services-content-box {
+      max-width: 400px;
+      margin: 0 0 50px 50px;
+    }
+    .services-content h1{
+      flex: 0 0 100%;
+    }
+    #connect-button {
+      flex: 0 0 100%;
+    }
+  }
 
 /* Process Page Styling
    ============================= */
