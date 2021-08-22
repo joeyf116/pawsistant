@@ -457,7 +457,6 @@ body {
   height: 100%;
   border-top: 2px solid var(--main-dark-color);
   border-bottom: 2px solid var(--main-dark-color);
-  ;
 }
 
 .services-content {
@@ -572,7 +571,7 @@ body {
 }
 
 .services-content-box ul {
-  display: none;
+  /* display: none; */
   /* visibility: hidden; */
 }
 
@@ -606,10 +605,10 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
     }
     .services-content-box {
-      max-width: 400px;
+      width: 400px;
       margin: 0 0 50px 50px;
     }
     .services-content h1{
